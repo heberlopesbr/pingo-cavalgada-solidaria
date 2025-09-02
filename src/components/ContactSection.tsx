@@ -74,7 +74,14 @@ const ContactSection = () => {
                 </div>
               </div>
               
-              <Button variant="cta" className="w-full text-lg py-6">
+              <Button 
+                variant="cta" 
+                className="w-full text-lg py-6"
+                onClick={() => {
+                  const registrationSection = document.getElementById('registration');
+                  registrationSection?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 Quero Participar
               </Button>
             </CardContent>

@@ -1,6 +1,7 @@
 import HeroSection from "@/components/HeroSection";
 import AboutEvent from "@/components/AboutEvent";
 import ContactSection from "@/components/ContactSection";
+import RegistrationForm from "@/components/RegistrationForm";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -9,6 +10,9 @@ const Index = () => {
       <HeroSection />
       <AboutEvent />
       <ContactSection />
+      <div id="registration">
+        <RegistrationForm />
+      </div>
       <Footer />
     </div>
   );
