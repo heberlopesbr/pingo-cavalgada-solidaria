@@ -48,8 +48,19 @@ const RegistrationForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Registration data:", formData);
-    // Here you would typically send the data to a backend
+    
+    // Create WhatsApp message with registration data
+    const message = `*Inscrição - 1º Encontro Solidário*\n\n` +
+      `*Nome:* ${formData.name}\n` +
+      `*E-mail:* ${formData.email}\n` +
+      `*Telefone:* ${formData.phone}\n` +
+      `*Cidade:* ${formData.city || 'Não informado'}\n` +
+      `*Tamanho da Camiseta:* ${formData.shirtSize}\n\n` +
+      `Aguardando confirmação do pagamento de R$ 200,00 via PIX.`;
+    
+    // Redirect to WhatsApp with the message
+    const whatsappUrl = `https://wa.me/5512991319888?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
   };
 
   return (
