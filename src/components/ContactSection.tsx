@@ -40,7 +40,7 @@ const ContactSection = () => {
             </CardHeader>
             <CardContent className="p-8">
               <div className="text-center mb-8">
-                <div className="text-5xl font-bold text-accent mb-2">R$ 250,00</div>
+                <div className="text-5xl font-bold text-accent mb-2">R$ 200,00</div>
                 <p className="text-muted-foreground">por participante</p>
               </div>
               
@@ -103,10 +103,14 @@ const ContactSection = () => {
                 </div>
                 
                 <div className="space-y-4">
-                  <div className="flex items-center gap-3 p-3 hover:bg-nature-beige rounded-lg transition-colors">
-                    <Phone className="w-5 h-5 text-accent" />
-                    <span className="text-sm">Entre em contato para mais informações</span>
-                  </div>
+                  <Button 
+                    variant="cta" 
+                    className="w-full"
+                    onClick={() => window.open('https://wa.me/5512991319888', '_blank')}
+                  >
+                    <Phone className="w-5 h-5 mr-2" />
+                    WhatsApp: (12) 99131-9888
+                  </Button>
                   
                   <div className="flex items-center gap-3 p-3 hover:bg-nature-beige rounded-lg transition-colors">
                     <Mail className="w-5 h-5 text-accent" />

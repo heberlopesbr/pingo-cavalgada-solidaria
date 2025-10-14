@@ -21,8 +21,8 @@ const HeroSection = () => {
           <div className="text-white space-y-8">
             <div className="space-y-4">
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                1ª Cavalgada
-                <span className="block text-golden-yellow">Solidária</span>
+                1º Encontro
+                <span className="block text-golden-yellow">Solidário</span>
               </h1>
               <h2 className="text-2xl lg:text-3xl font-semibold text-nature-beige">
                 Em prol do Projeto Pingo
@@ -44,7 +44,7 @@ const HeroSection = () => {
               </div>
               <div className="flex items-center gap-3 text-nature-beige">
                 <Users className="w-6 h-6" />
-                <span className="font-semibold">100 Cavaleiros</span>
+                <span className="font-semibold">100 Solidários</span>
               </div>
               <div className="flex items-center gap-3 text-nature-beige">
                 <Heart className="w-6 h-6" />
@@ -54,10 +54,26 @@ const HeroSection = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-                Fazer Inscrição - R$ 250,00
+              <Button 
+                variant="hero" 
+                size="lg" 
+                className="text-lg px-8 py-6"
+                onClick={() => {
+                  const contactSection = document.getElementById('contact');
+                  contactSection?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
+                Fazer Inscrição - R$ 200,00
               </Button>
-              <Button variant="outline" size="lg" className="bg-white/10 border-white text-white hover:bg-white hover:text-forest-green">
+              <Button 
+                variant="outline" 
+                size="lg" 
+                className="bg-white/10 border-white text-white hover:bg-white hover:text-forest-green"
+                onClick={() => {
+                  const aboutSection = document.getElementById('about');
+                  aboutSection?.scrollIntoView({ behavior: 'smooth' });
+                }}
+              >
                 Saiba Mais
               </Button>
             </div>
@@ -93,7 +109,7 @@ const HeroSection = () => {
                 
                 <div className="pt-4 border-t border-nature-beige">
                   <div className="text-center">
-                    <p className="text-2xl font-bold text-accent">R$ 250,00</p>
+                    <p className="text-2xl font-bold text-accent">R$ 200,00</p>
                     <p className="text-sm text-muted-foreground">por participante</p>
                   </div>
                 </div>

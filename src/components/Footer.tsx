@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Logo/Title */}
           <div className="space-y-2">
             <h3 className="text-2xl font-bold text-golden-yellow">
-              1ª Cavalgada Solidária
+              1º Encontro Solidário
             </h3>
             <p className="text-nature-beige">Em prol do Projeto Pingo</p>
           </div>
@@ -22,7 +22,7 @@ const Footer = () => {
             <div className="hidden md:block text-nature-beige">•</div>
             <div>08 de Novembro de 2025</div>
             <div className="hidden md:block text-nature-beige">•</div>
-            <div>R$ 250,00 por participante</div>
+            <div>R$ 200,00 por participante</div>
           </div>
 
           {/* Separator */}

@@ -10,8 +10,16 @@ import {
   Mail, 
   CreditCard,
   QrCode,
-  CheckCircle
+  CheckCircle,
+  MessageCircle
 } from "lucide-react";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 // Using the uploaded QR code image
 
 const RegistrationForm = () => {
@@ -19,7 +27,8 @@ const RegistrationForm = () => {
     name: "",
     email: "",
     phone: "",
-    city: ""
+    city: "",
+    shirtSize: ""
   });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -27,6 +36,13 @@ const RegistrationForm = () => {
     setFormData(prev => ({
       ...prev,
       [name]: value
+    }));
+  };
+
+  const handleSelectChange = (value: string) => {
+    setFormData(prev => ({
+      ...prev,
+      shirtSize: value
     }));
   };
 
@@ -118,9 +134,26 @@ const RegistrationForm = () => {
                     />
                   </div>
 
+                  <div className="space-y-2">
+                    <Label htmlFor="shirtSize">Tamanho da Camiseta *</Label>
+                    <Select value={formData.shirtSize} onValueChange={handleSelectChange} required>
+                      <SelectTrigger className="w-full">
+                        <SelectValue placeholder="Selecione o tamanho" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        <SelectItem value="PP">PP</SelectItem>
+                        <SelectItem value="P">P</SelectItem>
+                        <SelectItem value="M">M</SelectItem>
+                        <SelectItem value="G">G</SelectItem>
+                        <SelectItem value="GG">GG</SelectItem>
+                        <SelectItem value="XG">XG</SelectItem>
+                      </SelectContent>
+                    </Select>
+                  </div>
+
                   <div className="pt-4">
                     <div className="text-center mb-4">
-                      <div className="text-3xl font-bold text-accent mb-2">R$ 250,00</div>
+                      <div className="text-3xl font-bold text-accent mb-2">R$ 200,00</div>
                       <p className="text-sm text-muted-foreground">Valor da participação</p>
                     </div>
                     
@@ -161,7 +194,7 @@ const RegistrationForm = () => {
                         <li>Abra o app do seu banco</li>
                         <li>Escolha a opção PIX</li>
                         <li>Escaneie o código QR acima</li>
-                        <li>Confirme o pagamento de R$ 250,00</li>
+                        <li>Confirme o pagamento de R$ 200,00</li>
                         <li>Envie o comprovante via WhatsApp</li>
                       </ol>
                     </div>
@@ -170,7 +203,7 @@ const RegistrationForm = () => {
                       <h5 className="font-semibold text-earth-brown mb-2">Dados do PIX:</h5>
                       <div className="text-sm space-y-1">
                         <p><strong>Favorecido:</strong> Jose Pacelli Dias de Freitas Junior</p>
-                        <p><strong>Valor:</strong> R$ 250,00</p>
+                        <p><strong>Valor:</strong> R$ 200,00</p>
                         <p className="text-xs text-muted-foreground break-all">
                           <strong>Chave PIX:</strong> fcd90b3a-b45a-4b3b-8a80-02110e137024
                         </p>
@@ -187,6 +220,30 @@ const RegistrationForm = () => {
             </Card>
           </div>
           
+          {/* Donations and Sponsors Section */}
+          <Card className="mt-8 shadow-warm border-accent/30">
+            <CardHeader className="text-center bg-gradient-to-r from-golden-yellow to-accent text-white rounded-t-lg">
+              <CardTitle className="text-2xl flex items-center justify-center gap-2">
+                <MessageCircle className="w-6 h-6" />
+                Doações e Patrocínios
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="p-8 text-center">
+              <p className="text-muted-foreground mb-6">
+                Empresas e pessoas interessadas em apoiar este evento solidário através de doações ou patrocínio, 
+                entre em contato conosco pelo WhatsApp.
+              </p>
+              <Button 
+                variant="cta" 
+                className="w-full text-lg py-6"
+                onClick={() => window.open('https://wa.me/5512991319888', '_blank')}
+              >
+                <MessageCircle className="w-5 h-5 mr-2" />
+                Falar via WhatsApp
+              </Button>
+            </CardContent>
+          </Card>
+
           <div className="mt-8 text-center">
             <p className="text-sm text-muted-foreground">
               Após o pagamento, sua inscrição será confirmada em até 24 horas. 
