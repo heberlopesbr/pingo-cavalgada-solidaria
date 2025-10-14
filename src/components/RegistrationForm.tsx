@@ -192,7 +192,7 @@ const RegistrationForm = () => {
                 <div className="text-center space-y-6">
                   <div className="bg-white p-4 rounded-lg border-2 border-accent/20">
                     <img 
-                      src="/lovable-uploads/70421fef-b519-409f-9180-e6b7862ffe11.png" 
+                      src="/lovable-uploads/qr-code-pix-payment.png" 
                       alt="QR Code PIX para pagamento"
                       className="w-full max-w-xs mx-auto"
                     />
