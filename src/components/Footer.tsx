@@ -35,7 +35,7 @@ const Footer = () => {
             
             <div className="mt-4 text-xs text-nature-beige/80">
               <p>
-                Toda renda arrecadada será destinada ao CRAS para aplicação no Projeto Pingo
+                Toda renda destinada ao Projeto Pingo
               </p>
               <p className="mt-2">
                 Organização: José Pacelli Junior | Gonçalves - MG

@@ -49,10 +49,6 @@ const ContactSection = () => {
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
                     <div className="w-2 h-2 bg-accent rounded-full"></div>
-                    <span className="text-sm">Café da manhã completo</span>
-                  </div>
-                  <div className="flex items-center gap-3">
-                    <div className="w-2 h-2 bg-accent rounded-full"></div>
                     <span className="text-sm">Almoço e bebidas</span>
                   </div>
                   <div className="flex items-center gap-3">
@@ -129,12 +125,9 @@ const ContactSection = () => {
               <CardContent className="p-6 text-center">
                 <Heart className="w-12 h-12 mx-auto mb-4 text-golden-yellow" />
                 <h4 className="font-semibold text-lg mb-2">Apoie uma Causa Nobre</h4>
-                <p className="text-sm opacity-90 mb-4">
+                <p className="text-sm opacity-90">
                   Sua participação contribui diretamente para o Projeto Pingo de inclusão social
                 </p>
-                <Badge variant="secondary" className="bg-white/20 text-white border-white/30">
-                  100% da renda para o CRAS
-                </Badge>
               </CardContent>
             </Card>
 

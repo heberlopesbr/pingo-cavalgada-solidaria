@@ -33,7 +33,7 @@ const HeroSection = () => {
             </div>
             
             {/* Event Highlights */}
-            <div className="grid grid-cols-2 gap-4">
+            <div className="flex flex-wrap gap-6 justify-start">
               <div className="flex items-center gap-3 text-nature-beige">
                 <Calendar className="w-6 h-6" />
                 <span className="font-semibold">08 Nov 2025</span>
@@ -41,10 +41,6 @@ const HeroSection = () => {
               <div className="flex items-center gap-3 text-nature-beige">
                 <MapPin className="w-6 h-6" />
                 <span className="font-semibold">Gonçalves/MG</span>
-              </div>
-              <div className="flex items-center gap-3 text-nature-beige">
-                <Users className="w-6 h-6" />
-                <span className="font-semibold">100 Solidários</span>
               </div>
               <div className="flex items-center gap-3 text-nature-beige">
                 <Heart className="w-6 h-6" />
@@ -94,12 +90,8 @@ const HeroSection = () => {
                     <span className="text-right">Rodoviária de Gonçalves</span>
                   </div>
                   <div className="flex justify-between items-center">
-                    <span className="font-semibold text-earth-brown">Café da manhã:</span>
-                    <span>9h</span>
-                  </div>
-                  <div className="flex justify-between items-center">
                     <span className="font-semibold text-earth-brown">Saída:</span>
-                    <span>10h</span>
+                    <span>11h para aqueles que quiserem ir a cavalo</span>
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="font-semibold text-earth-brown">Chegada:</span>

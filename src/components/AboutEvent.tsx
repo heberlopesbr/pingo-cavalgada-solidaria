@@ -46,7 +46,7 @@ const AboutEvent = () => {
             Uma Jornada de Solidariedade
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            A 1ª Cavalgada Solidária é mais que um evento - é uma oportunidade de unir 
+            O 1º Encontro Solidário é mais que um evento - é uma oportunidade de unir 
             a comunidade em prol de uma causa nobre: o fortalecimento do Projeto Pingo 
             de inclusão social em Gonçalves.
           </p>
@@ -58,7 +58,7 @@ const AboutEvent = () => {
             <CardHeader className="text-center pb-6">
               <CardTitle className="text-2xl text-forest-green flex items-center justify-center gap-2">
                 <MapPin className="w-6 h-6" />
-                Percurso da Cavalgada
+                Percurso
               </CardTitle>
             </CardHeader>
             <CardContent>
@@ -66,7 +66,7 @@ const AboutEvent = () => {
                 <div className="text-center p-4 bg-nature-beige rounded-lg">
                   <h4 className="font-semibold text-earth-brown">Saída</h4>
                   <p className="text-sm">Rodoviária de Gonçalves</p>
-                  <p className="text-xs text-muted-foreground">10:00h</p>
+                  <p className="text-xs text-muted-foreground">11:00h</p>
                 </div>
                 <div className="hidden md:block text-4xl text-accent">→</div>
                 <div className="text-center p-4 bg-nature-beige rounded-lg">
@@ -104,14 +104,9 @@ const AboutEvent = () => {
           <CardContent className="p-8 md:p-12 text-center">
             <Heart className="w-16 h-16 mx-auto mb-6 text-golden-yellow" />
             <h3 className="text-3xl font-bold mb-4">Finalidade Social</h3>
-            <p className="text-xl mb-6 max-w-3xl mx-auto opacity-90">
-              Toda a renda líquida arrecadada será destinada ao CRAS, para aplicação 
-              junto ao PINGO, fortalecendo a inclusão e o desenvolvimento das atividades realizadas.
+            <p className="text-xl max-w-3xl mx-auto opacity-90">
+              Toda a renda líquida arrecadada será destinada ao Pingo, fortalecendo a inclusão e o desenvolvimento das atividades realizadas.
             </p>
-            <div className="flex items-center justify-center gap-4">
-              <Users className="w-8 h-8" />
-              <span className="text-lg font-semibold">100 Cavaleiros Unidos por uma Causa</span>
-            </div>
           </CardContent>
         </Card>
       </div>
