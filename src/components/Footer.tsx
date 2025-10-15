@@ -1,4 +1,5 @@
 import { Heart, MapPin } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -7,6 +8,11 @@ const Footer = () => {
         <div className="text-center space-y-6">
           {/* Logo/Title */}
           <div className="space-y-2">
+            <img 
+              src={logo} 
+              alt="Logo do Evento" 
+              className="w-16 h-16 mx-auto mb-3 object-contain"
+            />
             <h3 className="text-2xl font-bold text-golden-yellow">
               1º Encontro Solidário
             </h3>
