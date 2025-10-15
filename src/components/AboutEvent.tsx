@@ -26,11 +26,6 @@ const AboutEvent = () => {
       icon: <Shirt className="w-6 h-6" />,
       title: "Camiseta Oficial",
       description: "Cada participante receberá uma camiseta personalizada do evento"
-    },
-    {
-      icon: <GraduationCap className="w-6 h-6" />,
-      title: "Equoterapia",
-      description: "Profissionais especializadas acompanharão atividades terapêuticas com cavalos"
     }
   ];
 
@@ -85,7 +80,7 @@ const AboutEvent = () => {
         </div>
 
         {/* Activities Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
           {activities.map((activity, index) => (
             <Card key={index} className="text-center hover:shadow-warm transition-shadow duration-300">
               <CardContent className="p-6">
