@@ -11,7 +11,7 @@ const Footer = () => {
             <img 
               src={logo} 
               alt="Logo do Evento" 
-              className="w-16 h-16 mx-auto mb-3 object-contain"
+              className="w-48 h-48 mx-auto mb-3 object-contain"
             />
             <h3 className="text-2xl font-bold text-golden-yellow">
               1º Encontro Solidário
