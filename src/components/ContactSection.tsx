@@ -139,7 +139,7 @@ const ContactSection = () => {
                 </div>
                 <p className="text-sm text-muted-foreground">
                   <strong>Data:</strong> 08 de Novembro de 2025<br />
-                  <strong>Concentração:</strong> 9h na Rodoviária de Gonçalves<br />
+                  <strong>Concentração:</strong> 10:30 na Rodoviária de Gonçalves<br />
                   <strong>Saída:</strong> 11h em ponto
                 </p>
               </CardContent>

@@ -46,6 +46,9 @@ const Footer = () => {
               <p className="mt-2">
                 Organização: José Pacelli Junior | Gonçalves - MG
               </p>
+              <p className="mt-2">
+                Apoio: Prefeitura Municipal de Gonçalves - MG
+              </p>
             </div>
           </div>
 
