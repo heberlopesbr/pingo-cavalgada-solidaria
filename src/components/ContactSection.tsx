@@ -40,8 +40,8 @@ const ContactSection = () => {
             </CardHeader>
             <CardContent className="p-8">
               <div className="text-center mb-8">
-                <div className="text-5xl font-bold text-accent mb-2">R$ 200,00</div>
-                <p className="text-muted-foreground">por participante</p>
+                <div className="text-4xl font-bold text-accent mb-2">R$ 150,00</div>
+                <p className="text-muted-foreground">+ 1kg de alimento não perecível ou produto de higiene</p>
               </div>
               
               <div className="space-y-4 mb-8">

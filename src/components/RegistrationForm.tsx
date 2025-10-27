@@ -56,7 +56,7 @@ const RegistrationForm = () => {
       `*Telefone:* ${formData.phone}\n` +
       `*Cidade:* ${formData.city || 'Não informado'}\n` +
       `*Tamanho da Camiseta:* ${formData.shirtSize}\n\n` +
-      `Aguardando confirmação do pagamento de R$ 200,00 via PIX.`;
+      `Aguardando confirmação do pagamento de R$ 150,00 + 1kg de alimento não perecível ou produto de higiene via PIX.`;
     
     // Redirect to WhatsApp with the message
     const whatsappUrl = `https://wa.me/5512991319888?text=${encodeURIComponent(message)}`;
@@ -164,8 +164,8 @@ const RegistrationForm = () => {
 
                   <div className="pt-4">
                     <div className="text-center mb-4">
-                      <div className="text-3xl font-bold text-accent mb-2">R$ 200,00</div>
-                      <p className="text-sm text-muted-foreground">Valor da participação</p>
+                      <div className="text-3xl font-bold text-accent mb-2">R$ 150,00</div>
+                      <p className="text-sm text-muted-foreground">+ 1kg de alimento não perecível ou produto de higiene</p>
                     </div>
                     
                     <Button 
@@ -192,7 +192,7 @@ const RegistrationForm = () => {
                 <div className="text-center space-y-6">
                   <div className="bg-white p-4 rounded-lg border-2 border-accent/20">
                     <img 
-                      src="/lovable-uploads/qr-code-pix-payment.png" 
+                      src="/lovable-uploads/qr-code-pix-payment-new.png" 
                       alt="QR Code PIX para pagamento"
                       className="w-full max-w-xs mx-auto"
                     />
@@ -205,7 +205,7 @@ const RegistrationForm = () => {
                         <li>Abra o app do seu banco</li>
                         <li>Escolha a opção PIX</li>
                         <li>Escaneie o código QR acima</li>
-                        <li>Confirme o pagamento de R$ 200,00</li>
+                        <li>Confirme o pagamento de R$ 150,00</li>
                         <li>Envie o comprovante via WhatsApp</li>
                       </ol>
                     </div>
@@ -214,7 +214,7 @@ const RegistrationForm = () => {
                       <h5 className="font-semibold text-earth-brown mb-2">Dados do PIX:</h5>
                       <div className="text-sm space-y-1">
                         <p><strong>Favorecido:</strong> Jose Pacelli Dias de Freitas Junior</p>
-                        <p><strong>Valor:</strong> R$ 200,00</p>
+                        <p><strong>Valor:</strong> R$ 150,00 + 1kg de alimento não perecível ou produto de higiene</p>
                         <p className="text-xs text-muted-foreground break-all">
                           <strong>Chave PIX:</strong> fcd90b3a-b45a-4b3b-8a80-02110e137024
                         </p>

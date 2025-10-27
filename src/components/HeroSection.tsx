@@ -40,7 +40,7 @@ const HeroSection = () => {
               </div>
               <div className="flex items-center gap-3 text-nature-beige">
                 <MapPin className="w-6 h-6" />
-                <span className="font-semibold">Gonçalves/MG</span>
+                <span className="font-semibold">Sitio Do Pacelli - Mundo Novo</span>
               </div>
               <div className="flex items-center gap-3 text-nature-beige">
                 <Heart className="w-6 h-6" />
@@ -59,7 +59,7 @@ const HeroSection = () => {
                   contactSection?.scrollIntoView({ behavior: 'smooth' });
                 }}
               >
-                Fazer Inscrição - R$ 200,00
+                Fazer Inscrição
               </Button>
               <Button 
                 variant="outline" 
@@ -95,14 +95,14 @@ const HeroSection = () => {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="font-semibold text-earth-brown">Chegada:</span>
-                    <span>13h - Recanto da Paz</span>
+                    <span>13h - Sitio Do Pacelli</span>
                   </div>
                 </div>
                 
                 <div className="pt-4 border-t border-nature-beige">
                   <div className="text-center">
-                    <p className="text-2xl font-bold text-accent">R$ 200,00</p>
-                    <p className="text-sm text-muted-foreground">por participante</p>
+                    <p className="text-2xl font-bold text-accent">R$ 150,00</p>
+                    <p className="text-sm text-muted-foreground">+ 1kg de alimento não perecível ou produto de higiene</p>
                   </div>
                 </div>
               </div>

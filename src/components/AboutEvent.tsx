@@ -43,7 +43,7 @@ const AboutEvent = () => {
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             O 1º Encontro Solidário é mais que um evento - é uma oportunidade de unir 
             a comunidade em prol de uma causa nobre: o fortalecimento do Projeto Pingo 
-            de inclusão social em Gonçalves.
+            de inclusão social no Sitio Do Pacelli - Mundo Novo.
           </p>
         </div>
 
@@ -71,8 +71,8 @@ const AboutEvent = () => {
                 <div className="hidden md:block text-4xl text-accent">→</div>
                 <div className="text-center p-4 bg-accent text-white rounded-lg">
                   <h4 className="font-semibold">Chegada</h4>
-                  <p className="text-sm">Recanto da Paz</p>
-                  <p className="text-xs opacity-90">13:00h</p>
+                  <p className="text-sm">Sitio Do Pacelli</p>
+                  <p className="text-xs opacity-90">Estrada do Mundo Novo km 7 - 13:00h</p>
                 </div>
               </div>
             </CardContent>

@@ -23,12 +23,12 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-center gap-6 text-sm">
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
-              <span>Gonçalves - MG</span>
+              <span>Sitio Do Pacelli - Mundo Novo</span>
             </div>
             <div className="hidden md:block text-nature-beige">•</div>
             <div>08 de Novembro de 2025</div>
             <div className="hidden md:block text-nature-beige">•</div>
-            <div>R$ 200,00 por participante</div>
+            <div>R$ 150,00 + 1kg de alimento</div>
           </div>
 
           {/* Separator */}
