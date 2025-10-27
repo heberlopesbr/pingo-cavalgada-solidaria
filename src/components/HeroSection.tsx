@@ -40,7 +40,7 @@ const HeroSection = () => {
               </div>
               <div className="flex items-center gap-3 text-nature-beige">
                 <MapPin className="w-6 h-6" />
-                <span className="font-semibold">Sitio Do Pacelli - Mundo Novo</span>
+                <span className="font-semibold">Sitio Do Pacelli - Estrada do Mundo Novo km 7 - Mundo Novo</span>
               </div>
               <div className="flex items-center gap-3 text-nature-beige">
                 <Heart className="w-6 h-6" />
