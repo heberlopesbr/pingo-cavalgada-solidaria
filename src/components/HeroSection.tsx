@@ -95,7 +95,7 @@ const HeroSection = () => {
                   </div>
                   <div className="flex justify-between items-center">
                     <span className="font-semibold text-earth-brown">Chegada:</span>
-                    <span>13h - Sitio Do Pacelli</span>
+                    <span className="text-right">13h - Sitio Do Pacelli<br/>Estrada do Mundo Novo km 7 - Mundo Novo</span>
                   </div>
                 </div>
                 
