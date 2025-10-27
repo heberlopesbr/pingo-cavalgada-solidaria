@@ -85,17 +85,18 @@ const HeroSection = () => {
                 </div>
                 
                 <div className="space-y-4">
-                  <div className="flex justify-between items-center">
+                  <div className="flex flex-col gap-1">
                     <span className="font-semibold text-earth-brown">Concentração:</span>
-                    <span className="text-right">Rodoviária de Gonçalves</span>
+                    <span className="text-sm">Rodoviária de Gonçalves</span>
                   </div>
-                  <div className="flex justify-between items-center">
+                  <div className="flex flex-col gap-1">
                     <span className="font-semibold text-earth-brown">Saída:</span>
-                    <span>11h para aqueles que quiserem ir a cavalo</span>
+                    <span className="text-sm">11h para aqueles que quiserem ir a cavalo</span>
                   </div>
-                  <div className="flex justify-between items-center">
+                  <div className="flex flex-col gap-1">
                     <span className="font-semibold text-earth-brown">Chegada:</span>
-                    <span className="text-right">13h - Sitio Do Pacelli<br/>Estrada do Mundo Novo km 7 - Mundo Novo</span>
+                    <span className="text-sm">13h - Sitio Do Pacelli</span>
+                    <span className="text-sm">Estrada do Mundo Novo km 7 - Mundo Novo</span>
                   </div>
                 </div>
                 
